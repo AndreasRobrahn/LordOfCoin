@@ -1,0 +1,151 @@
+body
+{
+  /* height: 100%; */
+  width: 100%;
+
+  font-family: 'Lato' ;
+  font-size: 1.3em;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+
+  /* background:
+  linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+  linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+  linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+  linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+  linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+  linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424); */
+
+  background: rgb(244,238,238);
+  background: linear-gradient(90deg, rgba(244,238,238,0.1) 10%, rgba(240,231,220,0.1) 53%, rgba(251,240,225,0.1) 89%);
+
+
+}
+*::-webkit-scrollbar {
+    width: 4px;
+    height: 12px;
+}
+.center_items
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Effects and Animations */
+/*a shimmer over a div*/
+.shiningeffect
+  {
+    animation: shine 4s ease-in-out infinite;
+    animation-fill-mode: none;
+    animation-fill-mode: forwards;
+    content: "";
+    position: absolute;
+    margin-top: 30%;
+    margin-left: -45%;
+    width: 100%;
+    height: 20%;
+    opacity: 0;
+    -webkit-transform: rotate(-40deg);
+    -moz-transform: rotate(-40deg);
+    -ms-transform: rotate(-40deg);
+    -o-transform: rotate(-40deg);
+    transform: rotate(-40deg);
+    z-index: 200;
+}
+@-webkit-keyframes shine {
+0% {
+opacity: 0.4;
+top: -50%;
+left: -50%;
+transition-property: left, top, opacity;
+transition-duration: 0.7s, 0.7s, 0.15s;
+transition-timing-function: ease;
+}
+
+10%
+{
+  opacity: 0.8;
+}
+20% {
+opacity: 0.0;
+top: 80%;
+left: 80%;
+transition-property: left, top, opacity;
+}
+}
+
+
+@-moz-keyframes shine {
+0% {
+opacity: 0.8;
+top: -50%;
+left: -50%;
+transition-property: left, top, opacity;
+transition-duration: 0.7s, 0.7s, 0.15s;
+transition-timing-function: ease;
+}
+
+100% {
+opacity: 0.0;
+top: 80%;
+left: 80%;
+transition-property: left, top, opacity;
+}
+}
+
+@-ms-keyframes shine {
+0% {
+opacity: 0.8;
+top: -50%;
+left: -50%;
+transition-property: left, top, opacity;
+transition-duration: 0.7s, 0.7s, 0.15s;
+transition-timing-function: ease;
+}
+
+100% {
+opacity: 0.0;
+top: 80%;
+left: 80%;
+transition-property: left, top, opacity;
+}
+}
+
+@-o-keyframes shine {
+0% {
+opacity: 0.8;
+top: -50%;
+left: -50%;
+transition-property: left, top, opacity;
+transition-duration: 0.7s, 0.7s, 0.15s;
+transition-timing-function: ease;
+}
+
+100% {
+opacity: 0.0;
+top: 80%;
+left: 80%;
+transition-property: left, top, opacity;
+}
+}
+
+@keyframes shine {
+0% {
+opacity: 0.8;
+top: -50%;
+left: -50%;
+transition-property: left, top, opacity;
+transition-duration: 0.5s, 0.7s, 0.15s;
+transition-timing-function: ease;
+}
+
+100% {
+opacity: 0.0;
+top: 80%;
+left: 80%;
+transition-property: left, top, opacity;
+}
+}
